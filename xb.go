@@ -231,11 +231,11 @@ func GetEvent() *XBevent {
 
 			case RSTICK:
 				if event.Value == 1 {
-					xbe.Code = RSTICK_DOWN
-					xbe.Name = "RSTICK_DOWN"
+					xbe.Code = RJOY_DOWN
+					xbe.Name = "RJOY_DOWN"
 				} else {
-					xbe.Code = RSTICK_UP
-					xbe.Name = "RSTICK_UP"
+					xbe.Code = RJOY_UP
+					xbe.Name = "RJOY_UP"
 				}
 				if debug {
 					fmt.Println(xbe.Name)
@@ -243,11 +243,11 @@ func GetEvent() *XBevent {
 
 			case LSTICK:
 				if event.Value == 1 {
-					xbe.Code = LSTICK_DOWN
-					xbe.Name = "LSTICK_DOWN"
+					xbe.Code = LJOY_DOWN
+					xbe.Name = "LJOY_DOWN"
 				} else {
-					xbe.Code = LSTICK_UP
-					xbe.Name = "LSTICK_UP"
+					xbe.Code = LJOY_UP
+					xbe.Name = "LJOY_UP"
 				}
 				if debug {
 					fmt.Println(xbe.Name)
